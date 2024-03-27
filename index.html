@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+<div class="scrolls">
+    <div class="up"><span>↑</span>
+      <div class="center"><span>Desplazate<br>scrolleando</span></div>
+    </div>
+    <div class="down"><span>↓</span></div>
+  </div>
+  <div class="smooth">
+    <div class="header">
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Promos">Promos</a></li>
+        <li><a href="#Contactanos">Contactanos</a></li>
+      </ul>
+    </div>
+    <section id="Inicio">
+        <video autoplay muted loop id="video-bg">
+          <source src="./recursos/videofondo.mp4" type="video/mp4" >
+          ...
+        </video>
+        <!--
+        <div class="content">
+          <h2>Sección Inicio</h2>
+        </div>-->
+    </section>
+    <section id="Nosotros" style="background-image: url('https://cdn.pixabay.com/photo/2013/02/13/22/43/kitchen-81493_1280.jpg')">
+      <h2>Sección Nosotros</h2>
+    </section>
+    <section id="Promos" style="background-image: url('https://cdn.pixabay.com/photo/2016/03/27/16/54/food-1283108_1280.jpg')">
+      <h2>Sección Promos</h2>
+    </section>
+    <section id="Contactanos" style="background-image: url('https://cdn.pixabay.com/photo/2016/02/26/01/13/telephone-1223310_1280.jpg')">
+        <h2>Sección Contactanos</h2>
+        <form action="" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+      
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+      
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+  </div>
+</body>
+</html>
