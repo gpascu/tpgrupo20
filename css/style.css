@@ -202,68 +202,45 @@ section#Inicio {
 
 /* Web responsive secciòn */
 
-/* Celular*/
+/* Celular */
 @media only screen and (max-width: 600px) {
   .header ul {
-    display: none; /
+    display: none; /* Hide the navigation menu by default */
   }
 
   .header {
     position: fixed;
     top: 0;
     z-index: 1;
-    display: flex;
     width: 100%;
     min-height: 60px;
-    font-size: 1rem;
-    background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34, 0.1), transparent);
-    mix-blend-mode: luminosity;
-    z-index: 5;
-    justify-content: space-between; 
-    padding: 0 1rem; 
-  }
-
-  .header .logo {
-    display: block;
-    width: 50px; 
-    height: auto;
+    background-color: #1d1e22;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .header .menu-toggle {
-    display: block; 
-  }
-
-  .header ul {
-    display: none; 
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #1d1e22;
-    padding: 1rem 0;
-  }
-
-  .header ul.open {
-    display: flex; 
-  }
-
-  .header ul li {
-    margin: 0.5rem 0;
-  }
-
-  .header ul li a {
-    font-size: 1.5rem; 
+    display: block; /* Display the hamburger menu icon */
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
   #video-bg {
-    position: fixed; 
-    top: 0;
-    left: 0;
+    width: 100%; /* Adjust video width to 100% */
+    height: auto; /* Let height adjust automatically */
+    position: relative;
+    z-index: 0; /* Send it behind other elements */
+  }
+
+  .smooth {
+    position: relative;
     width: 100%;
     height: 100%;
-    z-index: -1; 
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
   }
 }
 
