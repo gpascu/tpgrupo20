@@ -141,7 +141,7 @@ section#Inicio {
   min-width: 100%;
   min-height: 100%;
   width: auto;
-  height: auto;
+  height: 100%;
   z-index: 1;
   opacity: 0.95;
 }
@@ -229,8 +229,8 @@ section#Inicio {
   }
 
   #video-bg {
-    width: 100%; /* Adjust video width to 100% */
-    height: auto; /* Let height adjust automatically */
+    width: auto; /* Adjust video width to 100% */
+    height: 100%; /* Let height adjust automatically */
     position: relative;
     z-index: 0; /* Send it behind other elements */
   }
