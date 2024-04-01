@@ -205,7 +205,7 @@ section#Inicio {
 /* Celular */
 @media only screen and (max-width: 600px) {
   .header ul {
-    display: none; /* Hide the navigation menu by default */
+    display: none; 
   }
 
   .header {
@@ -222,17 +222,17 @@ section#Inicio {
   }
 
   .header .menu-toggle {
-    display: block; /* Display the hamburger menu icon */
+    display: block; 
     color: #f4f4f4;
     font-size: 1.5rem;
     cursor: pointer;
   }
 
   #video-bg {
-    width: auto; /* Adjust video width to 100% */
-    height: 100%; /* Let height adjust automatically */
+    width: auto;
+    height: 100%;
     position: relative;
-    z-index: 0; /* Send it behind other elements */
+    z-index: 0; 
   }
 
   .smooth {
