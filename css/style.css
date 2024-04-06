@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+#homeLink{
+  width: 5vw;
+  position: absolute;
+  height: 5vh;
+  top: 1vh;
+  z-index: 2;
+  left: 3vw; 
+  mix-blend-mode:plus-lighter !important;
+}
+
+#logoHome{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -59,13 +75,13 @@ html{
 .header {
   position: fixed;
   top: 0;
-  z-index: 1;
+ 
   display: flex;
   width: 100%;
   min-height: 60px;
-  font-size: 1rem;
+  font-size: 1.7vw;
   background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34, 0.1), transparent);
-  mix-blend-mode: luminosity;
+ /* mix-blend-mode: luminosity;*/
   z-index: 5;
 }
 
