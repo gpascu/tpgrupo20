@@ -4,7 +4,6 @@
 ::after {
   box-sizing: border-box;
 }
-
 #homeLink{
   width: 3vw;
   /*position: absolute;*/
@@ -14,13 +13,11 @@
   /*left: 3vw; */
   mix-blend-mode:plus-lighter !important;
 }
-
 #logoHome{
   
   width: 4vw;
   height: auto;
 }
-
 body {
   position: relative;
   margin: 0;
@@ -34,6 +31,7 @@ body {
   color: #f4f4f4;
   background-color: #1d1e22;
   vertical-align:  baseline;
+  ::-webkit-scrollbar{width: 0px;}    
 }
 html{
   margin: 0;
@@ -41,7 +39,6 @@ html{
   border: 0;
   vertical-align: baseline;
 }
-
 .scrolls {
   position: absolute;
   top: 50%;
@@ -56,11 +53,9 @@ html{
   font-size: 2rem;
   color: #f4f4f4;
 }
-
 .scrolls .center {
   font-size: 0.825rem;
 }
-
 .smooth {
   position: relative;
   width: 100%;
@@ -69,13 +64,12 @@ html{
   overflow-y: scroll;
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;  
 }
 
 .header {
   position: fixed;
-  top: 0;
- 
+  top: 0; 
   display: flex;
   width: 100%;
   min-height: 60px;
@@ -123,8 +117,6 @@ html{
   width: 100%;
   background-color: #f4f4f4;
 }
-
-
 section {
   position: relative;
   display: flex;
@@ -138,7 +130,6 @@ section {
   background-color: #f4f4f4;
   background-size: cover;
   scroll-snap-align: center;
-
 }
 
 section h2 {
@@ -155,8 +146,6 @@ section h2 {
   width: 84%;
 }
 
-
-
 /* Inicio seccion */
 section#Inicio {
   overflow: hidden;
@@ -169,22 +158,17 @@ section#Inicio {
   z-index: 1;
   opacity: 0.95;
   right: 0;
-  left: 0;
-  
-
+  left: 0; 
   width: 100%;
   height: 100%;
-   
     object-position: center center;
     object-fit: fill;
 }
-
 .content {
   z-index: 1;
   text-align: center;
   color: #fff;
 }
-
 /* Contactanos seccion */
 #Contactanos {
   padding: 5% 10%;
@@ -193,17 +177,14 @@ section#Inicio {
   background-size: cover;
   background-position: center;
 }
-
 #Contactanos form {
   max-width: 500px;
   margin: 0 auto;
 }
-
 #Contactanos label {
   display: block;
   margin-bottom: 10px;
 }
-
 #Contactanos input[type="text"],
 #Contactanos input[type="email"],
 #Contactanos textarea {
@@ -232,7 +213,6 @@ section#Inicio {
 #Contactanos input[type="submit"]:hover {
   background-color: #45a049;
 }
-
 /* Web responsive secciòn */
 
 /* Celular */
@@ -240,6 +220,9 @@ section#Inicio {
   .header ul {
     display: none; 
   }
+  .menu-toggle.active + ul li a {
+    font-size: 1rem; 
+}
 
   .header {
     position: fixed;
