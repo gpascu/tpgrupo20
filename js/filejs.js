@@ -25,3 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//para el filtro
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBtn = document.querySelector('.search-btn');
+    const searchInput = document.querySelector('.search-input');
+
+    searchBtn.addEventListener('click', function() {
+        searchInput.classList.toggle('active');
+        if (searchInput.classList.contains('active')) {
+            searchInput.focus();
+        }
+    });
+});
+
+

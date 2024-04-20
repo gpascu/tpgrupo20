@@ -261,6 +261,9 @@ section#Inicio {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
+  li{
+    height:3vh !important;
+  }
 }
 
 /* Tablet */
@@ -398,6 +401,77 @@ section#Inicio {
   color: #fff;
 }
 
+/*inicio seccion hombre mujer*/
+#Categorias {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.category-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  top:18vh;
+}
+
+.category-card {
+  width: 40%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s; 
+    
+}
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.category-card a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#menCard{
+  background-image: url('../recursos/imagenes/man.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#womenCard{
+  background-image: url('../recursos/imagenes/woman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*inicio seccion hombre mujer*/
+
 @media (max-width: 768px) {
   #Productos {
     justify-content: center;
@@ -457,7 +531,67 @@ section#Inicio {
   color: #f4f4f4;
   text-shadow: 1px 1px orange;
 }
+
+.category-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  top: 18vh;
+  gap: 2vh;
+}
+#menCard {
+  background-image: url(../recursos/imagenes/man.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 35vh;
+}
+#womenCard {
+  background-image: url(../recursos/imagenes/woman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 35vh;
 }
 
+}
+/*busqueda inicio*/
+.search-filter {
+  position: relative;
+  right: 20px;
+  top:2vh;
+}
 
+.search-btn {
+  background-color: green;
+  width: 2.5vw;
+  height: 3vh;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-input {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0.5;
+  right: 2vw;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  opacity: 0.5;
+  width: 6vw;
+  height: 3vh;
+  font-size: 1rem;
+}
+
+.search-input.active {
+  display: block;
+}
+/*busqueda fin*/
 
