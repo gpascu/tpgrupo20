@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energizen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="./recursos/imagenes/iconoTab.png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <style>
+        
+    </style>
     <div class="scrolls">
         <div class="up"><span>↑</span>
         <div class="center"><span>Desplazate<br>scrolleando</span></div>
@@ -28,7 +31,58 @@
             </ul>
         </div>    
   </div>
- 
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos un grupo de jóvenes apasionados por el fitness y el estilo de vida saludable. Decidimos unir nuestras pasiones y conocimientos para abrir nuestro propio comercio de artículos para fitness.</p>
+        <p>Nuestra misión es ofrecer productos de calidad que ayuden a nuestros clientes a alcanzar sus metas de salud y bienestar.</p>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <h2>Nuestro Equipo</h2>
+        <div class="card-container">
+          <!-- Aquí se generarán las tarjetas de los dueños -->
+          <div class="card">
+            <img src="owner1.jpg" class="card-img-top" alt="Owner 1">
+            <div class="card-body">
+              <h5 class="card-title">Juan Pérez</h5>
+              <p class="card-text">Co-fundador</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="owner2.jpg" class="card-img-top" alt="Owner 2">
+            <div class="card-body">
+              <h5 class="card-title">María García</h5>
+              <p class="card-text">Co-fundadora</p>
+            </div>
+          </div>
+          <!-- Añadir más tarjetas según sea necesario -->
+        </div>
+      </div>
+    </section>
+
+    <section id="carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Aquí se generarán las imágenes del carousel -->
+          <div class="carousel-item active">
+            <img src="carousel1.jpg" class="d-block w-100" alt="Carousel 1">
+          </div>
+          <div class="carousel-item">
+            <img src="carousel2.jpg" class="d-block w-100" alt="Carousel 2">
+          </div>
+          <!-- Añadir más imágenes según sea necesario -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   
 </body>

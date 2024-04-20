@@ -481,18 +481,18 @@ section#Inicio {
   }
   .product-card {
     width: auto;
-    display: flex;
-    height: 20vh;
-    opacity: 0.9;
-    background-color: #e9d4ba;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
+        display: flex;
+        height: 17vh;
+        opacity: 0.9;
+        background-color: #e9d4ba;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
 }
   .product-card h3 {
     margin-top: 0vh;
@@ -557,41 +557,61 @@ section#Inicio {
   width: 80%;
   height: 35vh;
 }
-
-}
-/*busqueda inicio*/
-.search-filter {
-  position: relative;
-  right: 20px;
-  top:2vh;
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2vw;
 }
 
-.search-btn {
-  background-color: green;
-  width: 2.5vw;
-  height: 3vh;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
 }
 
-.search-input {
-  display: none;
+/*footer*/
+
+.footer {
+  background-color: #333;
+  opacity: 0.8;
   position: absolute;
-  right: 0;
-  top: 0.5;
-  right: 2vw;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  opacity: 0.5;
-  width: 6vw;
-  height: 3vh;
-  font-size: 1rem;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 0; 
+  height: 9vh;
 }
 
-.search-input.active {
-  display: block;
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-/*busqueda fin*/
 
+#logoEnFooter {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-links a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 24px;
+}
+/*nosotros*/
