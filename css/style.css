@@ -117,6 +117,9 @@ html{
   width: 100%;
   background-color: #f4f4f4;
 }
+
+.header ul li#notUnderline a:hover::after { background-color: transparent; }
+
 section {
   position: relative;
   display: flex;
@@ -194,6 +197,7 @@ section#Inicio {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  opacity: 0.85;
 }
 
 #Contactanos textarea {
@@ -213,6 +217,17 @@ section#Inicio {
 #Contactanos input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+.contFormMap{
+  display: flex;
+  width: 80%;
+}
+.map{
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 /* Web responsive secciòn */
 
 /* Celular */
@@ -261,8 +276,24 @@ section#Inicio {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
-  li{
+  /*li{
     height:3vh !important;
+  }*/
+
+  .contFormMap {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -3vh;
+    transform: scale(0.7);
+  }
+  .map{
+    margin-top: 2vh;
+        transform: scale(0.7);
+        height: 12vh;
+        width: auto;
+        margin-left: -12vw;
   }
 }
 
