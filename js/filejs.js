@@ -32,7 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const nombreInput = document.querySelector('#nombre');
     const emailInput = document.querySelector('#email');
     const mensajeInput = document.querySelector('#mensaje');
-  
+    const checkboxInput = document.querySelector('#checkbox');
+    const selectInput = document.querySelector('#select');
+    const imagenInput = document.querySelector('#imagen');
+
     submitButton.addEventListener('click', (e) => {
       e.preventDefault(); 
   
@@ -44,6 +47,35 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Completa los campos correctamente');
         return;
       }
+
+      // Agregar validación para el checkbox
+      if (!checkboxInput.checked) {
+        alert('Debes aceptar los términos y condiciones');
+        return;
+      }
+
+      // Agregar validación para el select
+      const selectValue = selectInput.value.trim();
+      if (!selectValue) {
+        alert('Debes seleccionar una opción');
+        return;
+      }
+
+      // Agregar validación para la imagen
+      const imagenValue = imagenInput.value.trim();
+      if (!imagenValue) {
+        alert('Debes subir una imagen');
+        return;
+      }
+
+      // Validar el tipo de archivo de la imagen
+      const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+      if (!allowedExtensions.exec(imagenValue)) {
+        alert('Solo se permiten archivos de imagen (jpg, jpeg, png, gif)');
+        return;
+      }
+
+
   
       if (!/^[a-zA-Z\s]+$/.test(nombreValue)) {
         alert('El nombre solo debe contener letras y espacios');
@@ -69,3 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 4000); // muestra el alerta por 4 segundos
     });
   });
+
+  // para imagen promo

@@ -37,7 +37,9 @@
            
     </div>
     <section id="Inicio">
+      <img id="logoHomeVideo" src="./recursos/imagenes/logoHome.png"  style="opacity: 0.7;z-index: 10;width: 15%;background-color: transparent;">
         <video id="video-bg" autoplay loop muted ><!--muted-->
+          
           <source src="./recursos/videofondo.mp4" type="video/mp4" >
           ...
         </video>
@@ -105,6 +107,10 @@
   </section>
     <section id="Promos" style="background-image: url('https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg')">
       <h2>Sección Promos</h2>
+      <div class="banner-container">
+        <img src="./recursos/imagenes/promo1.jpg" alt="Zapatillas Running" class="banner-image">
+        <div class="banner-message">50% de descuento en zapatillas running</div>
+      </div>
     </section>
     <section id="Contactanos" style="background-image: url('https://cdn.pixabay.com/photo/2016/02/26/01/13/telephone-1223310_1280.jpg')">
         <!--<h2>Sección Contactanos</h2>-->
@@ -112,12 +118,27 @@
           <form action="" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br>
-        
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br>
-        
+
             <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>      
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+            <label for="checkbox">Acepto los términos y condiciones:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" required><br>
+
+            <label for="select">Selecciona una opción:</label>
+            <select id="select" name="select" required>
+            <option value=""></option>
+              <option value="opcion1">Consulta</option>
+              <option value="opcion2">Queja</option>
+              <option value="opcion3">Presupuesto</option>
+            </select><br>
+
+            <label for="imagen">Sube una imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required><br>
+
             <input type="submit" value="Enviar">
           </form>
           <div class="map">
@@ -149,5 +170,6 @@
         </footer>
       </section>
   </div>
+
 </body>
 </html>
