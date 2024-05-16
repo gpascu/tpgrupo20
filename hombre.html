@@ -40,9 +40,10 @@
 
         .contCatProd {
             MARGIN-TOP: 11VH;
+            overflow-y: auto;
             background-color: #5a81ea;
             padding: 20px;
-            height: 78vh;
+            height: 83vh;
         }
 
         .footer {
@@ -64,6 +65,7 @@
 
         .sidebar {
             background-color: #fff; 
+            position: absolute;
             padding: 20px;
             border-radius: 10px; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -211,8 +213,6 @@ list-group-item{
 }
     </style>
 </head>
-<body>
-
 <div class="header">
     <div class="menu-toggle">&#9776;</div> <!-- Hamburger menu icono -->
     <ul>
@@ -224,6 +224,9 @@ list-group-item{
         <li><a href="index.html#Contactanos">Contactanos</a></li>
     </ul>
 </div>
+<body>
+
+
 
 <div class="contCatProd">
     <div class="row">
@@ -262,7 +265,7 @@ list-group-item{
         <div class="containerFooter">
             <div class="footer-brand">
                 <div id="logoEnFooter">
-                    <a href="#Inicio" id="homeLink"><img id="logoHome" src="./recursos/imagenes/logoHome.png"></a>
+                    <a href="#Inicio" id="homeLink"><img id="logoHomeFooter" src="./recursos/imagenes/logoHome.png"></a>
                 </div>                             
             </div>
             <div class="footer-links">

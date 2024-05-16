@@ -11,8 +11,29 @@
     <link rel="stylesheet" href="./css/style.css">    
     <script src="./js/filejs.js"></script>
 </head>
+<div class="header">
+  <div class="menu-toggle">&#9776;</div> <!-- Hamburger menu icono -->      
+  <ul>
+    <li id="notUnderline"><a href="#Inicio" id="homeLink"><img id="logoHome" src="./recursos/imagenes/logoHome.png" ></a></li>    
+    <li><a href="#Inicio">Inicio</a></li>
+    <li><a href="#Productos">Productos</a></li>
+    <li><a href="#Promos">Promociones</a></li>
+    <li><a href="./nosotros.html">Nosotros</a></li>
+    <li><a href="#Contactanos">Contactanos</a></li>
+  </ul>
+</div>
 <body>
-    
+    <style>
+      .slogan {
+       position:absolute;
+       top:54vh;
+  font-size: 3vw;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 999;
+}
+    </style>
 <div class="scrolls">
     <div class="up"><span>↑</span>
       <div class="center"><span>Desplazate<br>scrolleando</span></div>
@@ -22,22 +43,12 @@
   
   <div class="smooth">
     
-    <div class="header">
-      
-      <div class="menu-toggle">&#9776;</div> <!-- Hamburger menu icono -->      
-      <ul>
-        <li id="notUnderline"><a href="#Inicio" id="homeLink"><img id="logoHome" src="./recursos/imagenes/logoHome.png" ></a></li>    
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#Productos">Productos</a></li>
-        <li><a href="#Promos">Promociones</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="#Contactanos">Contactanos</a></li>
-        
-      </ul>
-           
-    </div>
+    
     <section id="Inicio">
       <img id="logoHomeVideo" src="./recursos/imagenes/logoHome.png"  style="opacity: 0.7;z-index: 10;width: 15%;background-color: transparent;">
+      <div class="slogan" id="slogan">
+        ¡Alcanza tu máximo rendimiento con nosotros!
+      </div>
         <video id="video-bg" autoplay loop muted ><!--muted-->
           
           <source src="./recursos/videofondo.mp4" type="video/mp4" >
@@ -106,7 +117,9 @@
       </div>
   </section>
     <section id="Promos" style="background-image: url('https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg')">
-      <h2>Sección Promos</h2>
+      <div>
+        <h2>Sección Promos</h2>
+      </div>
       <div class="banner-container">
         <img src="./recursos/imagenes/promo1.jpg" alt="Zapatillas Running" class="banner-image">
         <div class="banner-message">50% de descuento en zapatillas running</div>
@@ -151,7 +164,7 @@
             <div class="containerFooter">
               <div class="footer-brand">
                 <div id="logoEnFooter">
-                  <a href="#Inicio" id="homeLink"><img id="logoHome" src="./recursos/imagenes/logoHome.png"></a>
+                  <a href="#Inicio" id="homeLink"><img id="logoHomeFooter" src="./recursos/imagenes/logoHome.png"></a>
                 </div>                             
               </div>
               <div class="footer-links">
@@ -170,6 +183,22 @@
         </footer>
       </section>
   </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var slogan = document.getElementById('slogan');
 
+  function fadeIn() {
+    slogan.style.opacity = 1;
+    setTimeout(fadeOut, 5000); // Tiempo en milisegundos antes de desvanecer
+  }
+
+  function fadeOut() {
+    slogan.style.opacity = 0;
+    setTimeout(fadeIn, 5000); // Tiempo en milisegundos antes de mostrar de nuevo
+  }
+
+  fadeIn(); // Comienza la animación al cargar la página
+});
+</script>
 </body>
 </html>
