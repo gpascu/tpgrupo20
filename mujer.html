@@ -16,33 +16,14 @@
             padding: 0;
         }
 
-        .header {
-            background-color: #343a40; 
-            padding: 10px;
-        }
-
-        .header ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            
-            justify-content: center;
-        }
-
-        .header ul li {
-            margin: 0 10px;
-        }
-
-        .header ul li a {
-            color: #fff; 
-            text-decoration: none;
-        }
+    
 
         .contCatProd {
             MARGIN-TOP: 11VH;
-            background-color: #df96ff;
+            overflow-y: auto;
+            background-color: #d35df4;
             padding: 20px;
-            height: 78vh;
+            height: 91vh;
         }
 
         .footer {
@@ -62,12 +43,30 @@
             text-decoration: underline;
         }
 
-        .sidebar {
-            background-color: #fff; 
-            padding: 20px;
-            border-radius: 10px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 2px;
         }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            width: 250px;
+        }
+        .sidebar {
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+}
 
         .products-container {
             display: flex;
@@ -257,7 +256,7 @@ list-group-item{
         </div>
     </div>
 </div>
-
+<br><br><br><br>
 <footer class="footer">
     <div class="section footer-top bg-dark has-bg-image">
         <div class="containerFooter">

@@ -3,6 +3,9 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  
 }
 #homeLink{
   width: 3vw;
@@ -50,7 +53,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #f4f4f4;
-  background-color: #1d1e22;
+  background-color: #878a94c2;
   vertical-align:  baseline;
   ::-webkit-scrollbar{width: 0px;}    
 }
@@ -89,7 +92,16 @@ html{
   scroll-snap-type: y mandatory;  
     
 }
-
+.slogan {       
+  position: absolute;
+  top: 68%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 999;
+}
 .header {
   position: fixed;
   top: 0; 
@@ -153,7 +165,7 @@ section {
   align-content: center;
   justify-content: center;
   font-size: 1rem;
-  background-color: #f4f4f4;
+  background-color: #959595;
   background-size: cover;
   scroll-snap-align: center;
 }
@@ -253,132 +265,7 @@ section#Inicio {
   margin-bottom: auto;
 }
 
-/* Web responsive secciòn */
 
-/* Celular */
-@media only screen and (max-width: 600px) {
-  .header ul {
-    display: none; 
-  }
-  .menu-toggle.active + ul li a {
-    font-size: 1rem; 
-}
-
-  .header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    min-height: 60px;
-    background-color: #1d1e22;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0.65;
-  }
-
-  .header .menu-toggle {
-    display: block; 
-    color: #f4f4f4;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  #video-bg {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 0;
-    object-position: center center;
-    object-fit: fill;
-  }
-
-  .smooth {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-  /*li{
-    height:3vh !important;
-  }*/
-
-  .contFormMap {
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    position: absolute;
-    top: -3vh;
-    transform: scale(0.7);
-  }
-  .map{
-    margin-top: 2vh;
-        transform: scale(0.7);
-        height: 12vh;
-        width: auto;
-        margin-left: -12vw;
-  }
-
-  .banner-container {
-    position: relative;
-    overflow: hidden;
-    width: 54%;
-
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    height: 83vh;
-    zoom: 0.9;  
-}
-}
-
-/* Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  section {
-    padding: 50px;
-  }
-  
-  #Contactanos {
-    padding: 50px;
-  }
-
-  .banner-container {
-    position: relative;
-    overflow: hidden;
-    width: 54%;
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    height: 83vh;
-    zoom: 0.9;  
-}
-}
-
-/* Notebook */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  section {
-    padding: 80px;
-  }
-  
-  #Contactanos {
-    padding: 80px;
-  }
-}
-
-/* Pantalla grande */
-@media only screen and (min-width: 1441px) {
-  section {
-    padding: 100px;
-  }
-  
-  #Contactanos {
-    padding: 100px;
-  }
-}
 
 .menu-toggle {
   display: none; /* esconder hamburger por defecto */
@@ -456,13 +343,14 @@ section#Inicio {
 
 .product-card h3  {
   margin-top: 10px;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 1.4vw;
   color: black;
 }
 
 .product-card p {
   margin-top: 5px;
-  font-size: 20px;
+  font-size: 1.1vw;
   color: black;
 }
 
@@ -700,12 +588,12 @@ section#Inicio {
 /* Estilos para el contenedor */
 .banner-container {
   position: relative;
-  overflow: hidden;
-  width: 50%;
-  max-width: 600px; /* ajusta el ancho máximo según tus necesidades */
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 86%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos para la imagen */
@@ -716,6 +604,29 @@ section#Inicio {
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+.indicadorSector{
+  width: 70%;
+}
+.contenedorPromos {
+  height: 90%;
+  width: 90%;
+}
+
+.indicadorSector h2 {
+  text-transform: uppercase !important;
+  font-size: 4vw !important;
+  font-weight: 900 !important;
+  padding: 0.2em 0.2em;
+  color: #253a8f !important;
+  background-color: #f39a9a !important;
+  /* mix-blend-mode: screen; */
+  border-radius: 0.25em !important;
+  pointer-events: none;
+  user-select: none;
+  width: 90% ;
+  margin-top: 1vh;
+}
+
 
 /* Estilos para el mensaje */
 .banner-message {
@@ -747,3 +658,321 @@ section#Inicio {
   animation: zoom 3s infinite alternate, move 5s infinite alternate;
 }
 /*nosotros*/
+
+/* Web responsive secciòn */
+
+/* Celular */
+@media only screen and (max-width: 600px){ 
+  .header ul {
+    display: none; 
+  }
+  .menu-toggle.active + ul li a {
+    font-size: 1rem; 
+}
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 60px;
+    background-color: #1d1e22;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.65;
+  }
+
+  .header .menu-toggle {
+    display: block; 
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #video-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    object-position: center center;
+    object-fit: fill;
+  }
+
+  .smooth {
+    position: relative;
+    width: 100%;
+    height:100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  /*li{
+    height:3vh !important;
+  }*/
+
+  .contFormMap {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -3vh;
+    transform: scale(0.7);
+  }
+  .map{
+   
+    margin-top: 4vh;
+    width: 66%;
+    transform: scale(0.7);
+    height: 12vh;
+    /* width: auto; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 54%;
+
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    height: 83vh;
+    zoom: 0.9;  
+}
+.slogan {
+  position: absolute;
+  top: 60%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 999;
+}
+.contenedorPromos {
+  height: 90%;
+  width: 90%;
+  padding: 5vh;
+}
+.center{
+  display:none
+}
+.indicadorSector {
+  width: 63%;
+}
+.indicadorSector h2 {
+  font-size: 1vw !important;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  margin-right: -15px;
+  margin-left: -15px;
+}
+#carousel{
+  margin-top: -2vh;
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8vh;
+
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0px;
+  bottom: -33px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+#carouselExampleIndicators{
+  transform: scale(1.5);
+}
+
+#staff{
+  transform: scale(0.8);
+margin-top: -9vh;
+}
+#carousel{
+  margin-top: -10vh;
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16vh;
+}
+
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+  section {
+    padding: 50px;
+  }
+  
+  #Contactanos {
+    padding: 50px;
+  }
+
+  .banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 54%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    height: 83vh;
+    zoom: 0.9;  
+}
+.slogan {
+  position: absolute;
+  top: 55%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 999;
+}
+
+.header ul li {
+  margin: 0 1em;
+  padding: 1em;
+  height: 7vh;
+  font-size: 0.5em;
+}
+.map {
+  height: auto;
+  margin-top: 47vh;
+  margin-bottom: auto;
+}
+#Contactanos input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 5vh;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.custom-width-29 {
+  width: 29% !important;
+  transform: scale(0.8);
+  position: absolute;
+  left: -1vw;
+}
+
+.custom-width-55 {
+  margin-left: auto;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 2px;
+  flex-direction: column;
+}
+
+
+
+}
+
+/* Notebook */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  section {
+    padding: 80px;
+  }
+  
+  #Contactanos {
+    padding: 80px;
+  }
+}
+
+/* Pantalla grande */
+@media only screen and (min-width: 1441px) {
+  section {
+    padding: 100px;
+  }
+  
+  #Contactanos {
+    padding: 100px;
+  }
+  .contenedorPromos {
+    height: 104%;
+    width: 78%;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.banner-container {
+  position: relative;
+  overflow: hidden;
+  width: 86%;
+  max-width: 600px;
+  height: 73vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.contFormMap {
+  display: flex; 
+  width: 86%;
+  height: 80vh;
+}
+.map {
+  height: auto;
+  width: 62%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+iframe {
+  border: 0;
+  width: 100%;
+  height: 40vh;
+}
+.smooth {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+.carousel-item img{
+border-radius: 20px;
+}
+#Contactanos input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 6vh;
+}
+}
