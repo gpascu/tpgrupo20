@@ -1,3 +1,4 @@
+//Inicio secciòn menu hamburger
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const menu = document.querySelector('ul');
@@ -34,8 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+//Fin secciòn menu hamburger
 
-//control formulario de contacto
+
+//Inicio control formulario de contacto
 document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.querySelector('input[type="submit"]');
     const nombreInput = document.querySelector('#nombre');
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Agregar validación para la imagen
+      // Agregar validación para la imagen 
       const imagenValue = imagenInput.value.trim();
       if (!imagenValue) {
         alert('Debes subir una imagen');
@@ -110,5 +113,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 4000); // muestra el alerta por 4 segundos
     });
   });
+//Fin control formulario de contacto
 
-  // para imagen promo
+
+// INICIO control slogan debajo Logo en pàgina principal
+document.addEventListener('DOMContentLoaded', function () {
+  var slogan = document.getElementById('slogan');
+
+  function fadeIn() {
+    slogan.style.opacity = 1;
+    setTimeout(fadeOut, 5000); // Tiempo en milisegundos antes de desvanecer
+  }
+
+  function fadeOut() {
+    slogan.style.opacity = 0;
+    setTimeout(fadeIn, 5000); // Tiempo en milisegundos antes de mostrar de nuevo
+  }
+
+  fadeIn(); // Comienza la animación al cargar la página
+});
+// FIN control slogan debajo Logo en pàgina principal
