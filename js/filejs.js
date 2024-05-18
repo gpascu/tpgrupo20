@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     menuToggle.addEventListener('click', function() {
         menu.classList.toggle('show-menu');
         menuToggle.classList.toggle('active');
+
+        //Hace el cambio entre ||| y X del menu escondido
+        if (menuToggle.classList.contains('active')) {
+          menuToggle.innerHTML = '&#10005;'; // 'X'
+      } else {
+          menuToggle.innerHTML = '&#9776;'; // hamburger menu caracter
+      }
     });
 
     // Cierra el menu al elegir
@@ -13,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         item.addEventListener('click', function() {
             menu.classList.remove('show-menu');
             menuToggle.classList.remove('active');
+            menuToggle.innerHTML = '&#9776;'; 
         });
     });
 
@@ -22,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         section.addEventListener('wheel', function() {
             menu.classList.remove('show-menu');
             menuToggle.classList.remove('active');
+            menuToggle.innerHTML = '&#9776;';
         });
     });
 });
