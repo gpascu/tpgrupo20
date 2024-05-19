@@ -517,6 +517,7 @@ width: 55% !important;
 .product-card a {
   display: inline-block;
   margin-top: 10px;
+  font-size: 0.8rem;
   text-decoration: none;
   color: #333;
   font-weight: bold;
@@ -972,7 +973,7 @@ width: 55% !important;
 }
 
 #carouselExampleIndicators{
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 #staff{
@@ -1027,15 +1028,14 @@ list-group-item{
   }
 
   .containerFooter {
-        display: flex;
-        justify-content: flex-end;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        align-content: space-between;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: row;
     }
     .mb-4{
       
@@ -1047,14 +1047,23 @@ list-group-item{
     }
     .footer-links ul li a {
       text-decoration: none;
-      color: #fff;
-      font-size: 1.1vw;
+        color: #fff;
+        font-size: 1.8vw;
+        max-width: 10px;
   }
   .product-card img {
     width: 22vw;
     height: 9vh;
     border-radius: 8px;
     object-fit: cover;
+}
+.footer-links ul li {
+  display: inline-block;
+  margin-right: 1vw;
+  transform: scale(0.5);
+}
+.social-links {
+  transform: scale(0.75);
 }
 
 }
@@ -1109,13 +1118,13 @@ list-group-item{
 }
 .slogan {
   position: absolute;
-  top: 60%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 999;
+        top: 56%;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        z-index: 999;
 }
 
 .header ul li {
