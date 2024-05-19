@@ -830,6 +830,9 @@ width: 55% !important;
   .menu-toggle.active + ul li a {
     font-size: 1rem; 
 }
+footer{
+  height: 14vh;
+}
 
   .header {
     position: fixed;
