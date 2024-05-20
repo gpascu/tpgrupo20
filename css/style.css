@@ -309,6 +309,7 @@ body {
   padding: 20px 0;
   color: #fff;
   text-align: center;
+  height: 14vh;/*agregado20 Mayo*/
 }
 
 .footer a {
@@ -830,7 +831,7 @@ width: 55% !important;
   .menu-toggle.active + ul li a {
     font-size: 1rem; 
 }
-footer{
+.footer{
   height: 14vh;
 }
 
