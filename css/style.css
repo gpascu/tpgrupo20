@@ -614,7 +614,7 @@ width: 55% !important;
 .product-card {
   width: auto;
   display: flex;
-  height: 19vh;
+  height: 18vh;
   opacity: 0.9;
   background-color: #e9d4ba;
   border-radius: 8px;
@@ -836,6 +836,10 @@ width: 55% !important;
 .footer{
   height: 14vh;
 }*/
+.linkGeneros{
+  transform: scale(0.6);
+  margin-top: -1vh;
+}
 
   .header {
     position: fixed;
