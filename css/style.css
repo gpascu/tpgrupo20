@@ -832,10 +832,10 @@ width: 55% !important;
   .menu-toggle.active + ul li a {
     font-size: 1rem; 
 }
-/*
+
 .footer{
   height: 14vh;
-}*/
+}
 .linkGeneros{
   transform: scale(0.6);
   margin-top: -1vh;
