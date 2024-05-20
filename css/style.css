@@ -831,9 +831,10 @@ width: 55% !important;
   .menu-toggle.active + ul li a {
     font-size: 1rem; 
 }
+/*
 .footer{
   height: 14vh;
-}
+}*/
 
   .header {
     position: fixed;
@@ -1064,7 +1065,10 @@ list-group-item{
 .footer-links ul li {
   display: inline-block;
   margin-right: 1vw;
-  transform: scale(0.5);
+  transform: scale(0.8);
+}
+.section footer-top bg-dark has-bg-image{
+  position: relative;
 }
 .social-links {
   transform: scale(0.75);
